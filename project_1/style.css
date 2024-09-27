@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navlist{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    overflow-x: none;
+    padding-right: 2rem;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    /* background-color: ; */
+    background-image: linear-gradient( 68.6deg,  rgba(79,183,131,1) 14.4%, rgba(254,235,151,1) 92.7% ); 
+}
+
+.navcontainer{
+    width: 100vw;
+    height: 45px;
+    background-image: linear-gradient( 68.6deg,  rgba(79,183,131,1) 14.4%, rgba(254,235,151,1) 92.7% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#para1{
+    font-size: 2.0rem;
+    color: chartreuse;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+
+.footerbox{
+    min-height: 30px;
+    text-align: center;
+    background-image: linear-gradient( 68.6deg,  rgba(79,183,131,1) 14.4%, rgba(254,235,151,1) 92.7% );
+}
+
+.footerbox p{
+    color: blanchedalmond;
+    font-size: 1.3rem;
+}
+
+.contentbox{
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 50px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img1{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    transition: all 0.6s 0s;
+}
+
+#img2{
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.6s  linear 0s;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.ingbox1{
+    font-size: 1.3rem;
+}
+
+.recipebox1{
+    font-size: 1.3rem;
+}
+
+.ingbox2{
+    font-size: 1.3rem;
+}
+
+.recipebox2{
+    font-size: 1.3rem;
+}
+
+.rightbox:hover{
+    transform: scale(1.1);
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 10px 5px 5px rgba(69, 97, 54, 0.308);
+    border-radius: 20px;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-color: rgba(65, 56, 56, 0.404);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.overlay span{
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+}
